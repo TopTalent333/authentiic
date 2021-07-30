@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-firestore.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+
+        <nav class="nav">
+            <div class="logo">
+                <img src="./media/logo.svg" alt="">
+            </div>
+
+            <ul>
+                <li><a href=""><img src="./media/product.svg" alt=""><span>Product</span></li></a>
+                <li><a href=""><img src="./media/marketplace.svg" alt=""><span>Marketplace</span></li></a>
+                <li><a href=""><img src="./media/campaign.svg" alt=""><span>Campaign</span></li></a>
+                <li><a href=""><img src="./media/contactus.svg" alt=""><span>Contact Us</span></li></a>
+                <li><a href=""><img src="./media/menu.svg" alt=""><span>Menu</span></li></a>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <div class="container">
+        <img src="./media/img1.png" alt="">
+    </div>
+
+
+
+    <div class="modal">
+
+        <div>
+            <h1>Coming Soon</h1>
+            <h2>We’re currently working on creating something extraordinary.</h2>
+            <h3>We’ll be here soon subscribe to get noticed. </h3>
+            <form id="form">
+                <input type="text" name="email" id="email" placeholder="Your Email here..." required>
+                <!--<input type="submit" name="submit" id="submit-btn">-->
+            </form>
+            <section class="error">
+                <h2 id="errH"></h2>
+                <h3 id="errDesc"></h3>
+            </section>
+        </div>
+        
+    </div>
+
+    <div class="notify-bar">
+        <div>
+
+            <div id="notify-btn">
+            </div>
+
+         </div>
+    </div>
+    <script src="./js/app.js" type="module"></script>
+
+</body>
+</html>

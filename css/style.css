@@ -1,0 +1,369 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  height: 100vh;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 25px rgba(255, 168, 123, 0.5);
+          box-shadow: 0px 0px 25px rgba(255, 168, 123, 0.5);
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav .logo {
+  margin-left: 10%;
+}
+
+.nav .logo img {
+  width: 12em;
+  padding-top: 4%;
+}
+
+.nav ul {
+  margin-right: 10%;
+  position: relative;
+  padding-left: 5em;
+}
+
+.nav ul li {
+  list-style: none;
+  display: inline-block;
+  font-weight: 600;
+  color: #574B4B;
+  text-align: center;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #574B4B;
+}
+
+.nav ul li img {
+  width: 1.5em;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+.nav ul li span {
+  margin-bottom: 1em;
+  vertical-align: middle;
+}
+
+.container {
+  text-align: center;
+}
+
+.container img {
+  width: 60%;
+  margin-left: 4%;
+  margin-top: 6%;
+}
+
+.modal {
+  width: 100%;
+  height: inherit;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+}
+
+.modal div {
+  text-align: center;
+  margin-top: 200px;
+  color: white;
+}
+
+.modal div h1 {
+  font-size: 3.5em;
+}
+
+.modal div h2 {
+  font-weight: 400;
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+
+.modal div h3 {
+  font-weight: 400;
+  margin-bottom: 2em;
+  font-size: 1.5em;
+}
+
+.modal div #form input {
+  width: 20%;
+  height: 2vh;
+  font-size: 1.2em;
+  padding: 1em;
+  border-radius: 0.5em;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border: solid 1px white;
+  color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.modal div #form input::-webkit-input-placeholder {
+  color: #dddddd;
+}
+
+.modal div #form input:-ms-input-placeholder {
+  color: #dddddd;
+}
+
+.modal div #form input::-ms-input-placeholder {
+  color: #dddddd;
+}
+
+.modal div #form input::placeholder {
+  color: #dddddd;
+}
+
+.modal div #form input:active, .modal div #form input:focus {
+  outline: none;
+  border: solid 1px #A441EA;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.notify-bar {
+  position: absolute;
+  z-index: 6;
+  background-color: white;
+  width: 100%;
+  height: 15vh;
+  bottom: 0;
+  text-align: center;
+}
+
+.notify-bar #notify-btn {
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: 22vh;
+  padding: 0;
+  position: absolute;
+  left: 35%;
+  top: -74%;
+  background-image: url("../media/btn2.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.notify-bar #notify-btn:hover {
+  -webkit-filter: grayscale(20%);
+          filter: grayscale(20%);
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#submit-btn {
+  display: none;
+}
+
+.error {
+  margin-top: 5em;
+  font-size: 0.5em;
+  padding: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  border-radius: 1em;
+  background-color: #ffe7e7;
+  color: #ff5b5b;
+  border: solid 2px #ff5b5b;
+}
+
+.error #errH {
+  font-weight: 600;
+  font-size: 3em;
+  margin: 0;
+}
+
+.error #errDesc {
+  font-weight: 400;
+  font-size: 2em;
+  margin: 0;
+}
+
+.success {
+  background-color: #f3ffe7;
+  color: #7fca53;
+  border: solid 2px #7fca53;
+}
+
+.alert {
+  background-color: #fff9e7;
+  color: #eea435;
+  border: solid 2px #eea435;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1919px) {
+  .nav ul {
+    padding-left: 3em;
+  }
+  .nav ul li {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+  .modal div {
+    margin-top: 200px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1279px) {
+  .nav .logo {
+    margin-left: 0%;
+  }
+  .nav .logo img {
+    width: 7em;
+    padding-top: 15%;
+  }
+  .nav ul {
+    padding-left: 2em;
+    margin-right: 4%;
+  }
+  .nav ul li {
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 0.7em;
+  }
+  .nav ul li img {
+    width: 1.3em;
+    margin-right: 0.5em;
+    vertical-align: middle;
+  }
+  .modal div {
+    margin-top: 100px;
+  }
+  .modal div h1 {
+    font-size: 2.5em;
+  }
+  .modal div h2 {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+  .modal div h3 {
+    font-size: 1em;
+  }
+  .modal div #form input {
+    font-size: 0.8em;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .nav {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    padding: 1em;
+  }
+  .nav .logo {
+    margin-left: 0%;
+  }
+  .nav .logo img {
+    width: 10em;
+    padding-top: 4%;
+  }
+  .nav ul {
+    display: none;
+  }
+  .modal div {
+    margin-top: 250px;
+  }
+  .modal div h1 {
+    font-size: 2em;
+  }
+  .modal div h2 {
+    font-size: 0.8em;
+    margin-bottom: 1em;
+  }
+  .modal div h3 {
+    font-size: 0.8em;
+  }
+  .modal div #form input {
+    font-size: 0.8em;
+    width: 40%;
+  }
+  .notify-bar #notify-btn {
+    width: 50%;
+    height: 22vh;
+    left: 25%;
+    top: -74%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .nav {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    padding: 1em;
+  }
+  .nav .logo {
+    margin-left: 0%;
+  }
+  .nav .logo img {
+    width: 6em;
+    padding-top: 4%;
+  }
+  .nav ul {
+    display: none;
+  }
+  .modal div {
+    margin-top: 250px;
+  }
+  .modal div h1 {
+    font-size: 2em;
+  }
+  .modal div h2 {
+    font-size: 0.8em;
+    margin-bottom: 1em;
+  }
+  .modal div h3 {
+    font-size: 0.8em;
+  }
+  .modal div #form input {
+    font-size: 0.8em;
+    width: 40%;
+  }
+  .notify-bar #notify-btn {
+    width: 50%;
+    height: 22vh;
+    left: 25%;
+    top: -74%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
